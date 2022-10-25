@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap');
+
+:root {
+    --clr-1: hsl(227deg 12% 30%);
+    --clr-2: hsl(227deg 12% 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+.primary-container {
+    height: 8.5vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    border-bottom: 1px solid var(--clr-1);
+}
+
+.left {
+    display: flex;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.title-author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fa-pencil:hover {
+    cursor: pointer;
+    transform: rotate(10deg);
+}
+
+.author {
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.author:hover {
+    font-weight: 400;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.action {
+    cursor: pointer;
+    margin-left: 6px;
+    background-color: var(--clr-1);
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.action:hover {
+    background-color: var(--clr-2);
+}
+
+.user-menu {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: auto 10px;
+    border: 2px solid rgb(0, 200, 200);
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+/* section boxes html css js */
+
+.boxes-container {
+    height: 41.5vh;
+    display: flex;
+    justify-content: end;
+    background-color: #000;
+}
+
+.box {
+    width: 32.2%;
+    margin-left: calc(3.4% / 3);
+    border-left: 1px solid var(--clr-1);
+    border-right: 1px solid var(--clr-1);
+}
+
+.box-js {
+    border-right: none;
+}
+
+.box-top {
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.top-left {
+    display: flex;
+    gap: 7px;
+    padding: 9px 12px;
+    font-size: 0.7rem;
+    border-top: 3px solid var(--clr-1);
+    background-color: #1d1e22;
+}
+
+.top-left h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #a1a2a7;
+}
+
+.lang-icon {
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.slash-forward {
+    background-color: #FF3C41;
+}
+
+.asterisk {
+    background-color: #0EBEFF;
+}
+
+.brackets-round {
+    background-color: #FCD000;
+}
+
+.top-right {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.top-right button {
+    cursor: pointer;
+    padding: 2px 7px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--clr-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right button:hover {
+    background-color: var(--clr-2);
+}
+
+textarea {
+    width: 100%;
+    height: 87%;
+    padding: 20px;
+    font-size: 15px;
+    background-color: #1d1e22;
+    color: #a1a2a7;
+    border: none;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.between {
+    height: 2vh;
+    background-color: #000;
+    border-top: 1px solid var(--clr-1);
+}
+
+/* result */
+
+.result {
+    height: 43.5vh;
+}
+
+/* footer */
+
+.footer-container {
+    height: 4.5vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--clr-1);
+    color: #fff;
+    padding: 3px 7px;
+    margin: 2px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+.btn:first-of-type {
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: var(--clr-2);
+}
